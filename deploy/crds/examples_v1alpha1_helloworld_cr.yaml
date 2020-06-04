@@ -1,0 +1,6 @@
+apiVersion: examples.djzager.io/v1alpha1
+kind: HelloWorld
+metadata:
+  name: example-helloworld
+spec:
+  size: 3

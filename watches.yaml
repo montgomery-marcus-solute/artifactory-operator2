@@ -1,0 +1,6 @@
+---
+
+- version: 1
+  group: artifactory-operator2.solute.io
+  kind: artifactory-operator2
+  role: /opt/ansible/roles/artifactory-operator2
