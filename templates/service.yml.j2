@@ -1,0 +1,18 @@
+---
+apiVersion: v1
+ kind: Service
+ metadata:
+ name: artifactory-operator2
+ namespace: 
+ labels:
+ app: artifactory-operator2
+ service: artifactory-operator2
+ spec:
+ ports:
+ - name: web
+ port: 8081
+ protocol: TCP
+ targetPort: 8081
+ selector:
+ app: artifactory-operator2
+ service: artifactory-operator2

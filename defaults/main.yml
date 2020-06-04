@@ -1,0 +1,15 @@
+---
+# defaults file for ansible-role-artifactory-k8s
+
+name: "artifactory-operator2"
+
+namespace: "artifactory-operator2"
+
+image: docker.bintray.io/jfrog/artifactory-pro
+# To uninstall from the cluster
+ # state: absent
+ state: present
+
+
+# The size of the artifactory-operator2 deployment
+ size: 1

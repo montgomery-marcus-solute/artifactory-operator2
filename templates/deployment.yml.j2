@@ -1,0 +1,31 @@
+---
+
+ apiVersion: apps/v1
+ kind: Deployment
+ 
+ metadata:
+ name: artifactory-operator2
+ namespace: 
+ labels:
+ app: artifactory-operator2
+ service: artifactory-operator2
+ spec:
+ replicas: 
+ 
+ selector:
+ matchLabels:
+ app: artifactory-operator2
+ service: artifactory-operator2
+ 
+ template:
+ metadata:
+ labels:
+ app: artifactory-operator2
+ service: artifactory-operator2
+ spec:
+ containers:
+ - image: 
+ name: artifactory-operator2
+ ports:
+ - containerPort: 8081
+ protocol: TCP

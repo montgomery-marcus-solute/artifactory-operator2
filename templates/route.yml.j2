@@ -1,0 +1,15 @@
+---
+apiVersion: route.openshift.io/v1
+ kind: Route
+ metadata:
+ name: artifactory-operator2
+ namespace: 
+ labels:
+ app: artifactory-operator2
+ service: artifactory-operator2
+ spec:
+ port:
+ targetPort: web
+ to:
+ kind: Service
+ name: artifactory-operator2
